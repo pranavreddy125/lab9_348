@@ -1,11 +1,12 @@
 #include "matrix.h"
 #include <iostream>
+#include <iomanip> //for formatting the matrix better
 using namespace std;
 
 void printMatrix(const vector<vector<int>>& mat) {
     for (int i = 0; i < mat.size(); i++) {
         for (int j = 0; j < mat[i].size(); j++) {
-            cout << mat[i][j] << " ";
+            cout << setw(4) << mat[i][j]; //setw used to allign the cols
         }
         cout << "\n";
     }
