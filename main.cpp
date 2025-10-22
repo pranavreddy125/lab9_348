@@ -31,7 +31,13 @@ int main(){
 
     sumDiagonals(A);
 
-    swapRows(A, 0, 1);
+    swapRows(A, 0, 1); //A is matrix changing and 0,1 is row indicies to swap
+    printMatrix(A);
+
+    swapColumns(A, 0, 1); //A is matrix changing and 0,1 is col indicies to swap
+    printMatrix(A);
+
+    updateElement(A, 0, 0, 100); //to show the matrix changed
     printMatrix(A);
 
     return 0;
